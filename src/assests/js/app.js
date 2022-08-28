@@ -43,6 +43,7 @@ let barInterval = setInterval(() => {
       delay: 2,
       duration: 1,
       background: "transparent",
+      ease:"circ.out"
     });
   }
 }, 25);
