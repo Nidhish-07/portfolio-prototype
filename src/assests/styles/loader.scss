@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100%;
   z-index: 101;
-  background-color: coral;
+  background-color: #bb8c4f;
   display: grid;
   place-items: center;
   font-family: "Lato", sans-serif;
@@ -18,7 +18,7 @@
     position: relative;
     width: 500px;
     height: 200px;
-    border: 3px solid aquamarine;
+    border: 3px solid #402d1c;
 
     @media (max-width: 600px) {
       & {
@@ -39,9 +39,9 @@
 
     &--inner {
       height: 100%;
-      width: 50%;
+      width: 0%;
       border-radius: 10px;
-      background: aqua;
+      background: #ffb36e;
     }
   }
   &__text {
@@ -70,7 +70,7 @@
       @keyframes pulse {
         from {
           opacity: 0;
-          background-color: aquamarine;
+          background-color: #ffb36e;
         }
         to {
           opacity: 1;
@@ -81,7 +81,7 @@
     &--border {
       width: 20%;
       height: 1px;
-      background-color: aqua;
+      background-color: #402d1c;
       position: absolute;
       bottom: 0;
       left: 50%;
@@ -103,14 +103,23 @@
     padding: 7px;
   }
   &__width_animation {
-    animation: width_animation 1s forwards;
+    animation: width_animation 2s forwards;
     @keyframes width_animation {
       0% {
         width: 85%;
       }
       100% {
-        width: 250px;
+        width: 125px;
       }
     }
+  }
+
+  &__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0;
   }
 }
